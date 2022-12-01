@@ -10,17 +10,20 @@
     href="https://cdnjs.cloudflare.com/ajax/libs/MaterialDesign-Webfont/7.0.96/css/materialdesignicons.min.css"
     integrity="sha512-fXnjLwoVZ01NUqS/7G5kAnhXNXat6v7e3M9PhoMHOTARUMCaf5qNO84r5x9AFf5HDzm3rEZD8sb/n6dZ19SzFA=="
     crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cutive&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="assets/style/main.css">
   <title>late-fall-22-birdBrain</title>
 </head>
 
 <body>
   <header>
-    <nav class="navbar navbar-dark navbar-expand bg-dark text-light">
+    <nav class="navbar bird-nav navbar-expand ">
       <a class="navbar-brand" href="#">
-        <img src="https://codeworks.blob.core.windows.net/public/assets/img/cw-mark.png" height="45" alt=""
+        <img src="https://cdn.iconscout.com/icon/premium/png-256-thumb/parrot-1521946-1288778.png " height="45" alt=""
           loading="lazy">
-        <span class="ml-2">late-fall-22-birdBrain</span>
+        <span class="ml-2">BirdBrain</span>
       </a>
       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup"
         aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
@@ -35,7 +38,7 @@
     </nav>
   </header>
   <main class="container-fluid" id="app">
-    <section class="row" id="birds">
+    <section class="row p-2" id="birds">
       <!-- STUB my bird template -->
       <!-- <div class="col-4 p-3">
         <div class="elevation-3">
@@ -51,19 +54,13 @@
 
     <section class="row sticky-bottom">
       <div class="col-12 d-flex justify-content-end p-4">
-        <button class="fs-1" data-bs-toggle="modal" data-bs-target="#birdModal"
+        <button class="fs-1 btn bird-btn-green" data-bs-toggle="modal" data-bs-target="#birdModal"
           onclick="app.birdsController.getBirdForm()">🦃</button>
       </div>
     </section>
 
   </main>
-  <footer class="container-fluid bg-dark text-light">
-    <div class="row text-center">
-      <div class="col">
-        <p><small>Made with 💖 by CodeWorks</small></p>
-      </div>
-    </div>
-  </footer>
+
 
 
   <div class="modal fade" id="birdModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">

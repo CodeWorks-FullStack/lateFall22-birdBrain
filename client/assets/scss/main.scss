@@ -20,15 +20,63 @@ main {
   flex-grow: 1;
 }
 
+.cutive {
+  font-family: 'Cutive', serif;
+}
+
+.bird-nav {
+  background-color: #ff6a8a;
+  font-family: 'Cutive', serif;
+  font-weight: bolder;
+}
+
+.bird-btn {
+  border: 2px solid black;
+  box-shadow: 2px 2px black;
+}
+
+.bird-btn-green {
+  background-color: #6dab22;
+  border: 2px solid black;
+  box-shadow: 2px 2px black;
+}
+
 .peeper-img {
   height: 6vh;
-  width: 6vh;
-  border-radius: 5px;
+  width: 8vh;
+  outline: 1px solid black;
+  box-shadow: 4px 1px black,
+    3px 3px black;
+  border-radius: 10px;
+  object-fit: cover;
+}
+
+
+.bird-card {
+  border: 4px solid black;
+  box-shadow: 18px 7px #f3ff00;
+  border-radius: 27px;
 }
 
 .bird-img {
   width: 100%;
   // NOTE to make your own 'img-fluid' class.... you need 100% width and whatever desired height
   height: 45vh;
-  object-fit: cover;
+  // object-fit: cover;
+  border-top-left-radius: 22px;
+  border-top-right-radius: 22px;
+}
+
+.bird-modal-img {
+  height: 45vh;
+  width: 100%;
+  outline: 1px solid black;
+  box-shadow: 6px 7px black;
+  border-radius: 10px;
+}
+
+.creep-count {
+  border: 1px solid black;
+  border-radius: 15px;
+  box-shadow: 2px 2px black;
 }
