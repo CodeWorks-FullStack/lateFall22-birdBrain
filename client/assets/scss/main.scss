@@ -4,6 +4,11 @@
 @import "./custom.scss";
 @import "./loaders.scss";
 
+
+// NOTE in order to get your styles to load:type these in the terminal
+// run npm i bootstrap
+// npm run sass
+
 body {
   display: flex;
   flex-direction: column;
@@ -15,5 +20,15 @@ main {
   flex-grow: 1;
 }
 
+.peeper-img {
+  height: 6vh;
+  width: 6vh;
+  border-radius: 5px;
+}
 
-
+.bird-img {
+  width: 100%;
+  // NOTE to make your own 'img-fluid' class.... you need 100% width and whatever desired height
+  height: 45vh;
+  object-fit: cover;
+}
