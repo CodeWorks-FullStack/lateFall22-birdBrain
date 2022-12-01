@@ -16,6 +16,10 @@ class AppState extends EventEmitter {
 
   activeBird = null
 
+  /** @type {import('./Models/Creep').Creep[]} */
+
+  creepers = []
+
   socketData = []
 }
 

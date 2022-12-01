@@ -6,6 +6,8 @@ export class Bird {
         this.size = data.size
         this.img = data.img
         this.peeperId = data.peeperId
+        this.creepCount = data.creepCount
+        this.peeper = data.peeper
     }
 
 
@@ -16,8 +18,8 @@ export class Bird {
           <img class="bird-img selectable" src="${this.img}" data-bs-toggle="modal" data-bs-target="#birdModal" onclick="app.birdsController.setActive('${this.id}')" alt="">
          <h1 class="p-3">${this.name}</h1>
         <div class="d-flex justify-content-between align-items-end p-2 px-3 pb-4">
-        <button class="fs-3 creep-count btn pe-2" >👀 0</button>
-        <img class="peeper-img" src="https://thiscatdoesnotexist.com" alt="">
+        <button class="fs-3 creep-count btn pe-2" onclick="app.creepsController.becomeCreep('${this.id}')">👀 ${this.creepCount}</button>
+        <img class="peeper-img" src="${this.peeper.picture}" title="${this.peeper.name}" alt="">
       </div>
         </div>
       </div>`
@@ -39,6 +41,9 @@ export class Bird {
             <h1>${this.name}</h1>
              <h5>Can it fly?: ${this.canFly == true ? '👍' : '👎'}</h5>
              <h6>Size: ${this.size}</h6>
+             <div class="d-flex" id="creeps">
+
+             </div>
             </div>
           </div>
         </div>
