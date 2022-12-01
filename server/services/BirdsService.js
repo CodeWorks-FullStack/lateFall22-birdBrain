@@ -1,0 +1,23 @@
+import { dbContext } from "../db/DbContext.js"
+import { BadRequest } from "../utils/Errors.js"
+
+class BirdsService {
+  async createBird(body) {
+    const bird = await dbContext.Birds.create(body)
+    return bird
+  }
+  async getAllBirds(query) {
+    const birds = await dbContext.Birds.find(query)
+    return birds
+  }
+  async getBirdById(birdId) {
+    const bird = await dbContext.Birds.findById(birdId)
+    if (!bird) {
+      throw new BadRequest('Bird not found with this bird Id, dawg')
+    }
+    return bird
+  }
+
+}
+
+export const birdsService = new BirdsService()
